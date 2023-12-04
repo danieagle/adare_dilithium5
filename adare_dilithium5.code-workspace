@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"name": "adare_dilithium5",
+			"path": "adare_dilithium5"
+		},
+		{
+			"name": "adare_dilithium5_examples",
+			"path": "adare_dilithium5_examples"
+		},
+
+		{
+			"name": "Doc",
+			"path": "Doc"
+		},
+		{
+			"path": "."
+		}
+	],
+	"extensions": {
+		"recommendations": [
+			"AdaCore.ada"
+		]
+	},
+	"settings": {
+		"editor.formatOnType": true,
+		"editor.formatOnPaste": true,
+		"cmake.configureOnOpen": false,
+	}
+}

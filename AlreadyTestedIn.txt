@@ -1,0 +1,2 @@
+v.latest =>
+  Ubuntu 23.10 AMD64 gcc-13.2 gnat-13 gprbuild-2023.0.0 alire-1.2.1

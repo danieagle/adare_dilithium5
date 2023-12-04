@@ -1,0 +1,43 @@
+with "config/adare_dilithium5_config.gpr";
+library project Adare_Dilithium5 is
+
+  for Languages use ("Ada", "C");
+
+  for Library_Name use "Adare_Dilithium5";
+  for Library_Version use Project'Library_Name & ".so." & Adare_Dilithium5_Config.Crate_Version;
+
+  for Source_Dirs use ("config", "src", "src/c/common", "src/c/clean",
+    "src/" & adare_dilithium5_config.Alire_Host_OS & "/");
+
+   for Object_Dir use "obj/" & Adare_Dilithium5_Config.Build_Profile;
+
+   for Create_Missing_Dirs use "True";
+   for Library_Dir use "lib";
+
+   for Library_Kind use "dynamic";
+
+   package Compiler is
+      for Default_Switches ("Ada") use Adare_Dilithium5_Config.Ada_Compiler_Switches;
+
+      case adare_dilithium5_config.Build_Profile is
+
+         when "validation" | "development" =>
+            for Default_Switches ("C") use ("-std=c99", "-Og", "-g3", "-Wall", "-Wextra",
+              "-Wpedantic", "-Werror", "-Wredundant-decls", "-Wmissing-prototypes");
+
+         when "release" =>
+            for Default_Switches ("C") use ("-std=c99", "-O3", "-Wall", "-Wextra",
+              "-Wpedantic", "-Werror", "-Wredundant-decls", "-Wmissing-prototypes");
+
+      end case;
+   end Compiler;
+
+   package Binder is
+      for Switches ("Ada") use ("-Es"); --  Symbolic traceback
+   end Binder;
+
+   package Install is
+      for Artifacts (".") use ("share");
+   end Install;
+
+end Adare_Dilithium5;
