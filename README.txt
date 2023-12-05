@@ -37,7 +37,7 @@ USAGE
 
 For examples and how compile in your own projects, see:
   adare_dilithium5/adare_dilithium5/src/*.ad{s,b}
-  adare_hqc256_examples/src/*.adb
+  adare_dilithium5_examples/src/*.adb
 
   Enjoy!!
 
