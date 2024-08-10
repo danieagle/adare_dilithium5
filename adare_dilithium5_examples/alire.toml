@@ -8,7 +8,7 @@ maintainers-logins = ["danieagle"]
 
 executables = ["adare_dilithium5_examples0", "adare_dilithium5_examples1"]
 [[depends-on]]
-adare_dilithium5 = "~0.2.1"
+adare_dilithium5 = "~0.2.3"
 [[pins]]
 adare_dilithium5 = { path='..' }
 

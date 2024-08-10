@@ -2,7 +2,7 @@
 Adare_Dilithium5
 =====================
 
-Version: 0.2.1
+Version: 0.2.3
 
 Dilithium is a digital signature scheme that is strongly secure under
 chosen message attacks based on the hardness of lattice problems
