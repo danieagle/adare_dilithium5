@@ -1,6 +1,6 @@
 name = "adare_dilithium5"
 description = "Post Quantum Computer Resistant Cryptograph Sign, Dilithium5 Ada bind."
-version = "0.1.0-dev"
+version = "0.2.1"
 
 authors = ["Daniel Norte de Moraes"]
 maintainers = ["Daniel Norte de Moraes <danieagle@tutanota.com>"]
@@ -23,6 +23,10 @@ Dilithium is a digital signature scheme that is strongly secure under
       How a Bonus all Ada packages in this lib is "Ada Pure"! :-)
 
                    """
+
+licenses = "Unlicense"
+tags = ["signature", "pqc"]
+website = ""
 
 [build-switches]
 "*".Ada_Version = "Ada12"

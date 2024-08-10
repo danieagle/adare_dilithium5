@@ -6,7 +6,7 @@ library project Adare_Dilithium5 is
   for Library_Name use "Adare_Dilithium5";
   for Library_Version use Project'Library_Name & ".so." & Adare_Dilithium5_Config.Crate_Version;
 
-  for Source_Dirs use ("config", "src", "src/c/common", "src/c/clean",
+  for Source_Dirs use ("src", "src/c/common", "src/c/clean",
     "src/" & adare_dilithium5_config.Alire_Host_OS & "/");
 
    for Object_Dir use "obj/" & Adare_Dilithium5_Config.Build_Profile;

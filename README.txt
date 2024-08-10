@@ -2,7 +2,7 @@
 Adare_Dilithium5
 =====================
 
-Version: 0.1.0-dev
+Version: 0.2.1
 
 Dilithium is a digital signature scheme that is strongly secure under
 chosen message attacks based on the hardness of lattice problems
@@ -22,11 +22,16 @@ How a Bonus all Ada packages in this lib is "Ada Pure"! :-)
 USAGE
 -----
 
-   Building before publishing in Public Alire Arquive:
+   Building:
 
-      git clone https://github.com/danieagle/adare_dilithium5.git
-      cd adare_dilithium5/adare_dilithium5
-      alr build --release
+    1) enter in your alire project:
+    2) alr with adare_dilithium5
+
+    3.1) mybe use: alr build --release
+      or
+    3.2) mybe use: alr build --development
+      or
+    3.3) mybe use: alr build --validation
 
    And Be Happy :-D
 
@@ -36,7 +41,7 @@ USAGE
 
 
 For examples and how compile in your own projects, see:
-  adare_dilithium5/adare_dilithium5/src/*.ad{s,b}
+  src/*.ad{s,b}
   adare_dilithium5_examples/src/*.adb
 
   Enjoy!!
@@ -50,7 +55,9 @@ We will be happy in known where you use Adare_Dilithium5. :-)
 THANKS
 ------
 
-To All people, past present and future, that made Life better to Live. Thanks All!!
+To Brian "Beejs Jorgensen" Hall, because his book "the Beej's Guide to Network Programming"
+and to All people, past present and future, that made Life better to Live and
+that include the Fellows from Ada Newsgroup and from forum.ada-lang.io. Thanks All!!
 
 
 LICENSE

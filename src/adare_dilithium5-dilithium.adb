@@ -80,7 +80,6 @@ package body adare_dilithium5.dilithium with Pure is
     private_key  : aliased in dilithium5_private_key)
     return Interfaces.C.char_array
   is
-    use Interfaces.C;
     csl : aliased Interfaces.C.char_array :=
       Interfaces.C.char_array'(1 .. data_to_sign'Length + dilithium5_signature_length + 1 => char'Val (0));
     sl  : aliased Interfaces.C.size_t := csl'Length;
@@ -98,8 +97,6 @@ package body adare_dilithium5.dilithium with Pure is
       public_key            : aliased in dilithium5_public_key)
       return Interfaces.C.char_array
   is
-    use Interfaces.C;
-
     csl : aliased Interfaces.C.char_array :=
       Interfaces.C.char_array'(1 .. (signature_and_message'Length + 2) - dilithium5_signature_length => char'Val (0));
 

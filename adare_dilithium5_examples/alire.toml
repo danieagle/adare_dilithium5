@@ -8,9 +8,9 @@ maintainers-logins = ["danieagle"]
 
 executables = ["adare_dilithium5_examples0", "adare_dilithium5_examples1"]
 [[depends-on]]
-adare_dilithium5 = "~0.1.0-dev"
+adare_dilithium5 = "~0.2.1"
 [[pins]]
-adare_dilithium5 = { path='../adare_dilithium5' }
+adare_dilithium5 = { path='..' }
 
 [build-switches]
 "*".Ada_Version = "Ada12"
